@@ -118,7 +118,7 @@ align-items: center;
 .links-header:focus{
 color: var(--accent-text-color);
 }
-.active-links::after{
+.current::after{
     content: "";
     position: absolute;
     display: flex;
@@ -127,15 +127,9 @@ color: var(--accent-text-color);
     height: 4px;
     border-radius: 2px;
     background-color: var(--accent-text-color);
-    visibility:hidden;
+    /* visibility:hidden;
     opacity: 0;
-    pointer-events: none;
-}
-.active-links:active::after,
-.lactive-links:visited::after{
-   visibility: visible;
-   opacity:100;
-   
+    pointer-events: none; */
 }
 .icon-letter{
     margin-right: 10px;
