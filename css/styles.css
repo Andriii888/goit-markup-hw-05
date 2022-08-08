@@ -13,6 +13,7 @@
 --icons-color:#AFB1B8;
 --transition-dur-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+
 }
 
 h1,h2,h3,p{
@@ -52,7 +53,7 @@ font-family: 'Roboto',
         color:var(--primary-text-colorry) ;
     background-color: var(--color-white);
     font-size: 14px;
-    letter-spacing:0.03 ;
+    letter-spacing:0.03em;
 }
 ul {
 list-style: none;
@@ -112,7 +113,7 @@ align-items: center;
 }
 .links-header{
     position: relative;
-        fill: currentColor;
+        /* fill: currentColor; */
         transition: color var(--transition-dur-func);
 }
 .links-header:hover ,
@@ -131,18 +132,18 @@ color: var(--accent-text-color);
 }
 .icon-letter{
     margin-right: 10px;
-    color: currentColor;
+    fill: currentColor;
 }
 .icon-phone{
     margin-right: 10px;
-    color: currentColor;
+    fill: currentColor;
 }
 .header-contacts:first-child{
     margin-right: 50px;
 }
 
 .navigation-links a{
-    color:var(--primary-text-colorry,black) ;
+    color:var(--primary-text-colorry) ;
 }
 .header-contacts a{
         display: flex;
@@ -153,7 +154,7 @@ color: var(--accent-text-color);
         line-height: 1.14;
         letter-spacing: 0.02em;
     
-        color:var(--text-color,silver);
+        color:var(--text-color);
 }
 .navigation-links .current {
     color: var(--accent-text-color);
@@ -223,7 +224,7 @@ margin: 0 auto;
         text-align: center;
         letter-spacing: 0.06em;    
         color:var(--color-white,white);
-        background: var(--accent-text-color,blue);
+        background: var(--accent-text-color);
 
         padding-top: 10px;
         padding-bottom:10px;
@@ -263,7 +264,7 @@ background: #F5F4FA;
             line-height: 1.143;
             letter-spacing: 0.03em;
             text-transform: uppercase;
-            color:var(--primary-text-colorry,black);
+            color:var(--primary-text-colorry);
     }
     .advantage p{
         font-style: normal;
@@ -302,7 +303,7 @@ justify-content: center;
             letter-spacing: 0.03em;
             margin-bottom: 50px;
         
-            color:var(--primary-text-colorry,black);
+            color:var(--primary-text-colorry);
     }
     
     .work{
@@ -310,10 +311,10 @@ justify-content: center;
     }
         .work-img-text{
             font-weight: 700;
-                font-size: 14px;
-                line-height: 1.11px;
+                /* font-size: 14px; */
+                line-height: 1.14;
                 text-align: center;
-                letter-spacing: 0.03em;
+                /* letter-spacing: 0.03em; */
                 text-transform: uppercase;
                 color: #FFFFFF;
 background: rgba(47, 48, 58, 0.8);  
@@ -321,9 +322,11 @@ position: absolute;
 width: 100%;
     height: 70px;
     bottom: 0%;
-    right: 0%;
-    padding-top: 27px;
-    display: inline-block;
+    /* right: 0%; */
+    /* padding-top: 27px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
      .our-work-img{
         position: relative;
@@ -347,7 +350,7 @@ width: 100%;
             line-height: 1.17;
             text-align: center;
             letter-spacing: 0.03em;
-                        color:var(--primary-text-,black);
+                        color:var(--primary-text-colorry);
 
             margin-bottom: 50px;
             margin-left: auto;
@@ -361,7 +364,7 @@ width: 100%;
             line-height: 1.19;
             letter-spacing: 0.03em;
         
-            color:var(--primary-text-colorry,black);
+            color:var(--primary-text-colorry);
     }
     .our-team p{
         font-style: normal;
@@ -370,7 +373,7 @@ width: 100%;
             line-height: 1.19;
             letter-spacing: 0.03em;
                    
-            color:var(--text-color,silver);
+            color:var(--text-color);
     }
     .our-team{
         display: flex;
@@ -510,12 +513,12 @@ align-items: center;
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
- color: var(--adress-color, white);
+ color: var(--adress-color);
   transition: color var(--transition-dur-func);
              }
 
              footer{
-        background-color: var(--bgcolor-black, black);
+        background-color: var(--bgcolor-black);
     padding: 60px 0;
              }
 .links-address a:hover,
@@ -572,7 +575,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
         font-size: 16px;
         line-height: 1.625;
         letter-spacing: 0.03em;    
-        color:var(--primary-text-colorry,black);
+        color:var(--primary-text-colorry);
         background-color: var(--background-color-team);
         border-radius: 4px;
         border: var(--primary-text-colorry);
@@ -585,15 +588,13 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
             border-radius: 4px;
             margin-left: auto;
             margin-right: auto;
+            transition: background-color var(--transition-dur-func),
+      color var(--transition-dur-func),box-shadow var(--transition-dur-func);
 }
-button{
-          transition: background-color var(--transition-dur-func),
-      color var(--transition-dur-func);
 
-}
 button:hover,
 button:focus{
-background-color:var(--accent-text-color,blue);
+background-color:var(--accent-text-color);
 color:var(--color-white) ;
 }
 .info-portfolio{
@@ -608,7 +609,7 @@ padding:20px 24px;
         line-height: 2;
         letter-spacing: 0.06em;
     
-        color:var(--primary-text-colorry,black);
+        color:var(--primary-text-colorry);
 }
 .galery-portfolio p{
     font-style: normal;
@@ -618,7 +619,7 @@ padding:20px 24px;
         letter-spacing: 0.03em;
                     margin-top:4px;
     
-        color:var(--text-color,silver);
+        color:var(--text-color);
 }
 .img-portfolio-links{
     display: block;
@@ -650,7 +651,8 @@ p.overlay-portfolio-text {
     display: block;
     overflow: hidden;
 }
-.img-portfolio-links:hover .overlay-portfolio-text{
+.img-portfolio-links:hover .overlay-portfolio-text,
+.img-portfolio-links:focus .overlay-portfolio-text{
     transform: translateY(0%);
 
 }
